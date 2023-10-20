@@ -40,7 +40,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest test/
-    - name: Build documentation
-      run: |
-        pdoc src/example_package -o docs
         
