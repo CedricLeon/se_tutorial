@@ -21,3 +21,6 @@ def max_search(lst):
         return float('nan')
 
     return np.max(lst)
+
+if __name__ == "__main__":
+    hello_world()
