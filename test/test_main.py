@@ -5,13 +5,15 @@ from example_package.example import max_search
 #  - it works with assert
 #  - all methods strating with "test_" are runned
 
+
 def test_main():
     assert True
 
+
 @pytest.mark.parametrize("cases", [([], float('nan')),
-                                 ([1,2,3,4,5], 5),
-                                 ([1,1,1], 1),
-                                 ([1,2,float('nan'),3], float('nan'))])
+                                 ([1, 2, 3, 4, 5], 5),
+                                 ([1, 1, 1], 1),
+                                 ([1, 2, float('nan'), 3], float('nan'))])
 def test_max_search(cases):
     lst, result = cases
     max = max_search(lst)
